@@ -2,7 +2,7 @@
 // @name        Youtube Focus
 // @namespace   nitpum.com
 // @match       https://www.youtube.com/*
-// @grant       GM_addStyle
+// @grant       GM_addStyle
 // @version     1.0
 // @author      nitpum
 // @description 02/03/2024, 23:35:57
