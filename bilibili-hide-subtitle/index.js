@@ -13,6 +13,10 @@ const APP_ID = '#app'
 const SUBTITLE_MENU_CLASS = 'ip-subtitle'
 const NO_SUB_TITLE_OPTION_ID = 'no-sub-option'
 
+const ENABLED_HTML =
+  '<div class="hide-subtitle-radio hide-subtitle-radio-active"></div> Subtitle'
+const DISABLED_HTML = '<div class="hide-subtitle-radio"></div> Subtitle'
+
 let styleElement = null
 
 function addBaseStyle() {
@@ -33,8 +37,7 @@ function addBaseStyle() {
 function hideSubtitle() {
   if (styleElement) return
 
-  document.querySelector('#' + NO_SUB_TITLE_OPTION_ID).innerHTML =
-    '<div class="hide-subtitle-radio"></div> Subtitle'
+  document.querySelector('#' + NO_SUB_TITLE_OPTION_ID).innerHTML = DISABLED_HTML
 
   styleElement = GM_addStyle(`
 	.subtitle-group {
@@ -49,8 +52,7 @@ function hideSubtitle() {
 function showSubtitle() {
   if (!styleElement) return
 
-  document.querySelector('#' + NO_SUB_TITLE_OPTION_ID).innerHTML =
-    '<div class="hide-subtitle-radio hide-subtitle-radio-active"></div> Subtitle'
+  document.querySelector('#' + NO_SUB_TITLE_OPTION_ID).innerHTML = ENABLED_HTML
   styleElement.remove()
   styleElement = null
 }
@@ -63,8 +65,7 @@ function addOption() {
   const subTitleOptions = document.querySelector(`.${SUBTITLE_MENU_CLASS}`)
 
   const noSub = document.createElement('div')
-  noSub.innerHTML =
-    '<div class="hide-subtitle-radio hide-subtitle-radio-active"></div> Subtitle'
+  noSub.innerHTML = ENABLED_HTML
   noSub.setAttribute('id', NO_SUB_TITLE_OPTION_ID)
   noSub.setAttribute('class', 'ip-subtitle--item')
   noSub.addEventListener('click', handleClickNoSubtitle)
@@ -81,7 +82,7 @@ function handleClickNoSubtitle() {
 }
 
 function detectSubtitleMenu() {
-  const callback = (mutationList, observer) => {
+  const callback = (_, observer) => {
     const hasSubtitleMenu = document.querySelector(`.${SUBTITLE_MENU_CLASS}`)
     if (hasSubtitleMenu) {
       addOption()
