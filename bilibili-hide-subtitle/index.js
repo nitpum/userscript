@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name        Bilibili hide subtitle
 // @namespace   nitpum.com
-// @match       *://*.bilibili.tv/*/play/*
+// @match       *://*.bilibili.tv/*play/*
 // @grant       GM_addStyle
-// @version     1.0.0
+// @version     1.0.1
 // @author      nitpum
 // @description 5/26/2024, 6:52:04 PM
 // @downloadURL https://raw.githubusercontent.com/nitpum/userscript/main/bilibili-hide-subtitle/index.js
