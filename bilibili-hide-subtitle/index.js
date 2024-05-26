@@ -3,7 +3,7 @@
 // @namespace   nitpum.com
 // @match       *://*.bilibili.tv/*play/*
 // @grant       GM_addStyle
-// @version     1.0.1
+// @version     1.2.0
 // @author      nitpum
 // @description 5/26/2024, 6:52:04 PM
 // @downloadURL https://raw.githubusercontent.com/nitpum/userscript/main/bilibili-hide-subtitle/index.js
@@ -38,9 +38,12 @@ function hideSubtitle() {
 
   styleElement = GM_addStyle(`
 	.subtitle-group {
-	  display: none !important;
+		display: none !important;
 	}
-  `)
+	.player-mobile-ass-subtitle {
+		display: none !important;
+	}
+ `)
 }
 
 function showSubtitle() {
