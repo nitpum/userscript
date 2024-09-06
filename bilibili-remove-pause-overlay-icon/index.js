@@ -13,4 +13,4 @@ GM_addStyle(`
   .player-mobile-play-mask-pause-icon {
     display: none !important;
   }
-`)
+`);
