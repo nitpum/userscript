@@ -3,7 +3,7 @@
 // @namespace   nitpum.com
 // @match       https://www.youtube.com/*
 // @grant       GM_addStyle
-// @version     1.0.2
+// @version     1.1.0
 // @author      nitpum
 // @description 02/03/2024, 23:35:57
 // @downloadURL https://raw.githubusercontent.com/nitpum/userscript/main/youtube-focus/index.js
