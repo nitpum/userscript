@@ -11,7 +11,7 @@
 
 GM_addStyle("ytd-reel-shelf-renderer { display: none; }");
 
-GM_addStyle("ytd-watch-next-secondary-results-renderer { margin-top: 80vh; }");
+GM_addStyle("ytd-watch-next-secondary-results-renderer { margin-top: 100vh; }");
 
 GM_addStyle("*[is-shorts] { display: none; }");
 
