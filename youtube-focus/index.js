@@ -34,6 +34,7 @@ ytd-two-column-browse-results-renderer[page-subtype='home'] {
 ytd-watch-next-secondary-results-renderer {
   opacity: 0;
   transition: opacity 500ms;
+  margin-top: 100vh;
 }
 
 ytd-watch-next-secondary-results-renderer:hover {
