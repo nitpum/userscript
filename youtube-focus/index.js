@@ -19,11 +19,9 @@ ytd-reel-shelf-renderer {
   display: none;
 }
 
-/*
 ytd-search grid-shelf-view-model {
     display: none !important;
 }
-*/
 
 /* Bump home screen video recommend to botom */
 ytd-two-column-browse-results-renderer[page-subtype='home'] {
