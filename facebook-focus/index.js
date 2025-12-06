@@ -3,7 +3,7 @@
 // @namespace   nitpum.com
 // @match       https://*.facebook.com/*
 // @grant       GM_addStyle
-// @version     1.1.1
+// @version     1.1.2
 // @author      nitpum
 // @description Reduce distranction on Facebook
 // @downloadURL https://userscript.nitpum.com/facebook-focus/index.js
@@ -26,9 +26,9 @@ div.html-div:has(div[aria-label="Reels"]) {
   display: none !important;
 }
 
-/* Hide mobiel reels */
+/* Hide mobile reels */
 div[data-mcomponent="MContainer"][data-type="container"]:has(div[aria-label^="View reel"]) {
-  display: none !important;
+  opacity: 0;
 }
 
 /* Open in app bottom container */
