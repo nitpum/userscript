@@ -3,7 +3,7 @@
 // @namespace   nitpum.com
 // @match       https://*.facebook.com/*
 // @grant       GM_addStyle
-// @version     1.1.2
+// @version     1.1.3
 // @author      nitpum
 // @description Reduce distraction on Facebook
 // @downloadURL https://userscript.nitpum.com/facebook-focus/index.js
@@ -32,7 +32,7 @@ div[data-mcomponent="MContainer"][data-type="container"]:has(div[aria-label^="Vi
 }
 
 /* Open in app bottom container */
-div[data-comp-id="22222"][data-mcomponent="MContainer"][data-type="container"] {
+#screen-root > div > div[data-comp-id="22222"][data-mcomponent="MContainer"][data-type="container"]:has(div[role="button"][data-action-id="-3"]) {
   display: none !important;
 }
 `);
