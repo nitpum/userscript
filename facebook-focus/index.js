@@ -25,4 +25,14 @@ div[role="complementary"]:hover {
 div.html-div:has(div[aria-label="Reels"]) {
   display: none !important;
 }
+
+/* Hide mobiel reels */
+div[data-mcomponent="MContainer"][data-type="container"]:has(div[aria-label^="View reel"]) {
+  display: none !important;
+}
+
+/* Open in app bottom container */
+div[data-comp-id="22222"][data-mcomponent="MContainer"][data-type="container"] {
+  display: none !important;
+}
 `);
