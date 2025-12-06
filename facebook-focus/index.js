@@ -5,7 +5,7 @@
 // @grant       GM_addStyle
 // @version     1.1.2
 // @author      nitpum
-// @description Reduce distranction on Facebook
+// @description Reduce distraction on Facebook
 // @downloadURL https://userscript.nitpum.com/facebook-focus/index.js
 // ==/UserScript==
 
@@ -36,3 +36,4 @@ div[data-comp-id="22222"][data-mcomponent="MContainer"][data-type="container"] {
   display: none !important;
 }
 `);
+
