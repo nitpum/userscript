@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name        Youtube Focus
 // @namespace   nitpum.com
-// @match       https://www.youtube.com/*
+// @match       https://*.youtube.com/*
 // @grant       GM_addStyle
-// @version     1.3.0
+// @version     1.3.1
 // @author      nitpum
 // @description Reduce distraction on Youtube
 // @downloadURL https://userscript.nitpum.com/youtube-focus/index.js
