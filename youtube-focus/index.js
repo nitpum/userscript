@@ -3,10 +3,10 @@
 // @namespace   nitpum.com
 // @match       https://www.youtube.com/*
 // @grant       GM_addStyle
-// @version     1.2.2
+// @version     1.2.3
 // @author      nitpum
 // @description 02/03/2024, 23:35:57
-// @downloadURL https://raw.githubusercontent.com/nitpum/userscript/main/youtube-focus/index.js
+// @downloadURL https://userscript.nitpum.com/youtube-focus/index.js
 // ==/UserScript==
 
 GM_addStyle(`
